@@ -2,7 +2,7 @@
   "name": "gulp-streamify-old",
   "description": "Wrap old plugins to support streams.",
   "version": "0.0.4",
-  "homepage": "https://github.com/nfroidure/gulp-streamify",
+  "homepage": "https://github.com/ground5hark/gulp-streamify-old",
   "author": {
     "name": "Nicolas Froidure",
     "url": "http://www.insertafter.com/blog.html"

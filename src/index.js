@@ -3,7 +3,7 @@ var Stream = require('stream')
   , Duplexer = require('plexer')
 ;
 
-const PLUGIN_NAME = 'gulp-streamify';
+const PLUGIN_NAME = 'gulp-streamify-old';
 
 // Plugin function
 function streamifyGulp(pluginStream) {
