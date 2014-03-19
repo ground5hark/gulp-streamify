@@ -22,7 +22,7 @@ function streamifyGulp(pluginStream) {
   inputStream._transform = function(file, unused, cb) {
     // Buffering the file stream
     var originalStream, buf, bufstream;
-    if(file.isNull() || file.isBuffer()) {
+    if(!file || (file.contents === null) || gutil.isBuffer(file.contents)) {
       inputStream.push(file);
       return cb();
     }
@@ -52,7 +52,7 @@ function streamifyGulp(pluginStream) {
   // Change files contents from buffer to stream and write to the output stream
   outputStream._transform = function(file, unused, cb) {
     var buf, newStream;
-    if(file.isNull() || !file.wasStream) {
+    if(!file || (file.contents === null) || !file.wasStream) {
       outputStream.push(file);
       return cb();
     }

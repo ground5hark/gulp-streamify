@@ -1,7 +1,8 @@
-# gulp-streamify
+# gulp-streamify-old
 > Wrap old [Gulp](http://gulpjs.com/) plugins to support streams.
 
-[![NPM version](https://badge.fury.io/js/gulp-streamify.png)](https://npmjs.org/package/gulp-streamify) [![Build status](https://secure.travis-ci.org/nfroidure/gulp-streamify.png)](https://travis-ci.org/nfroidure/gulp-streamify) [![Dependency Status](https://david-dm.org/nfroidure/gulp-streamify.png)](https://david-dm.org/nfroidure/gulp-streamify) [![devDependency Status](https://david-dm.org/nfroidure/gulp-streamify/dev-status.png)](https://david-dm.org/nfroidure/gulp-streamify#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/nfroidure/gulp-streamify/badge.png?branch=master)](https://coveralls.io/r/nfroidure/gulp-streamify?branch=master)
+This is a fork of the original [gulp-streamify](https://github.com/nfroidure/gulp-streamify-old)
+plugin, made to be compatible with node 0.8.x
 
 It is pretty annoying when Gulp plugins doesn't support streams. This plugin
  allows you to wrap them in order to use the stream mode anyway. It is pretty
@@ -19,16 +20,16 @@ It is pretty annoying when Gulp plugins doesn't support streams. This plugin
 
 ## Usage
 
-First, install `gulp-streamify` as a development dependency:
+First, install `gulp-streamify-old` as a development dependency:
 
 ```shell
-npm install --save-dev gulp-streamify
+npm install --save-dev gulp-streamify-old
 ```
 
 Then, add it to your `gulpfile.js` and wrap all that shit:
 
 ```javascript
-var gStreamify = require('gulp-streamify')
+var gStreamify = require('gulp-streamify-old')
   , noStreamPlugin = require('gulp-no-stream')
 ;
 
@@ -39,9 +40,9 @@ gulp.task('stream', function(){
 });
 ```
 
-If you have several plugins to wrap together, prefer calling `gulp-streamify` once:
+If you have several plugins to wrap together, prefer calling `gulp-streamify-old` once:
 ```javascript
-var gStreamify = require('gulp-streamify')
+var gStreamify = require('gulp-streamify-old')
   , noStreamPlugin = require('gulp-no-stream')
   , noStreamPlugin2 = require('gulp-no-stream2')
 ;
